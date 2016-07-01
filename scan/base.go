@@ -233,6 +233,7 @@ func (l *base) convertToModel() (models.ScanResult, error) {
 		Platform:    l.Platform,
 		KnownCves:   scoredCves,
 		UnknownCves: unscoredCves,
+		Optional:    l.ServerInfo.Optional,
 	}, nil
 }
 
